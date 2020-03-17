@@ -34,7 +34,7 @@ Após estar na pasta do projeto, utilizar o NPM para instalar os pacotes utiliza
 npm install
 ```
 
-Preencher o arquivo answer.json na raiz do projeto informando o texto cifrado, e na pasta do projeto rodar o script:
+Preencher o arquivo answer.json na raiz do projeto informando o **texto cifrado e o número de casas utilizados pela cifra**, estando na pasta do projeto rodar o script:
 
 ```
 node index.js
