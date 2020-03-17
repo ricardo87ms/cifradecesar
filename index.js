@@ -18,20 +18,6 @@ function criptografiaSHA1(texto){
     return sha1(texto)
 }
 
-function decifraTexto(cifrado, numeroCasas){
-
-    const cifradoArray = cifrado.split('');
-
-    let decifrado = [];
-
-    const cifra = retornaCifra(alfabeto, numeroCasas);
-
-    cifradoArray.map((letra) => {
-        decifrado.push(converteLetra(letra, cifra));
-    })
-    return decifrado.join('');
-}
-
 function retornaCifra(alfabeto, numeroCasas){
 
     const arrayAlfabeto = alfabeto.split('');
@@ -47,6 +33,20 @@ function retornaCifra(alfabeto, numeroCasas){
     }
 
     return arrayCifra.join('');
+}
+
+function decifraTexto(cifrado, numeroCasas){
+
+    const cifradoArray = cifrado.split('');
+
+    let decifrado = [];
+
+    const cifra = retornaCifra(alfabeto, numeroCasas);
+
+    cifradoArray.map((letra) => {
+        decifrado.push(converteLetra(letra, cifra));
+    })
+    return decifrado.join('');
 }
 
 function converteLetra(letra, cifra){
